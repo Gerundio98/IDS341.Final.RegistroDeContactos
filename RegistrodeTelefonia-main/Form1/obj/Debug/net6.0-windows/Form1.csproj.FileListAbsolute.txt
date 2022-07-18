@@ -1,0 +1,40 @@
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Form1.exe
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Form1.deps.json
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Form1.runtimeconfig.json
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Form1.dll
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Form1.pdb
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.csproj.AssemblyReference.cache
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.Form1.resources
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.Properties.Resources.resources
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.csproj.GenerateResource.cache
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.AssemblyInfo.cs
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.dll
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\refint\Form1.dll
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.pdb
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.genruntimeconfig.cache
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\ref\Form1.dll
+C:\Users\Hp\Desktop\Form1\Form1\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Hp\Desktop\Form1\Form1\obj\Debug\net6.0-windows\Form1.csproj.CopyComplete
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Form1.exe
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Form1.deps.json
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Form1.runtimeconfig.json
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Form1.dll
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Form1.pdb
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.csproj.AssemblyReference.cache
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.Form1.resources
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.Properties.Resources.resources
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.csproj.GenerateResource.cache
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.AssemblyInfoInputs.cache
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.AssemblyInfo.cs
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.csproj.CoreCompileInputs.cache
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.csproj.CopyComplete
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.dll
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\refint\Form1.dll
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.pdb
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\Form1.genruntimeconfig.cache
+C:\Users\Rodolfo Peña\Downloads\RegistrodeTelefonia-main\RegistrodeTelefonia-main\Form1\obj\Debug\net6.0-windows\ref\Form1.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YR8hvizlndqNMwUpCplWzM0T1vYybLX0T5L+hLsXAYf5eE4q8JhUcZ4jBbqCgbr8BTsQufsfey4Vtf7Pb3SBvg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rodolfo Peña\\Downloads\\RegistrodeTelefonia-main\\RegistrodeTelefonia-main\\Form1\\Form1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rodolfo Peña\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
