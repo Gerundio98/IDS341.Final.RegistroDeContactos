@@ -9,24 +9,27 @@ namespace Form1
     public partial class Form1 : Form
     {
         string pathImage=$"{AppDomain.CurrentDomain.BaseDirectory}\\usuario.png";
-        int a = 1;
-        int b = 1;
         List<clssContactoEmpresarial> contactoempresarialList = new List<clssContactoEmpresarial>();
         List<clssCompañia> compañiaList = new List<clssCompañia>();
 
         public Form1()
         {
             InitializeComponent();
+            //Leyendo JSON de contactos empresariales.
             var json = string.Empty;
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\ContactosEmpresariales.json";
             if (File.Exists(pathFile))
             {
+                //Convirtiendo JSON en lista.
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 contactoempresarialList = JsonConvert.DeserializeObject<List<clssContactoEmpresarial>>(json);
+                //Mostrando lista en Data Grind View.
                 dgvContactosEmpresariales.DataSource = contactoempresarialList;
             }
+            //Asignando imagen por defecto.
             pbImagen.Image=Image.FromFile(pathImage);
 
+            //Leyendo JSON compañias y guardando los nombres en el combo box de compañias.
             var auxList = new List<string> { };
             json = string.Empty;
             pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\Compañias.json";
@@ -91,6 +94,7 @@ namespace Form1
                 Imagen=pathImage.ToString(),
             };
             var json = string.Empty;
+            //Leyendo JSON.
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\ContactosEmpresariales.json";
             if (File.Exists(pathFile))
             {
@@ -100,6 +104,7 @@ namespace Form1
                 {
                     if (contactoempresarialList[i].Nombre == vContactoEmpresarial.Nombre)
                     {
+                        //Actualizando contacto
                         contactoempresarialList.Remove(contactoempresarialList[i]);
                         contactoempresarialList.Add(vContactoEmpresarial);
                         MessageBox.Show($"El contacto {txtbNombre.Text} fue encontrado y actualizado.");
@@ -109,6 +114,7 @@ namespace Form1
                 }
                 if (j == 0)
                 {
+                    //Agregando contacto.
                     contactoempresarialList.Add(vContactoEmpresarial);
                     MessageBox.Show($"El contacto {txtbNombre.Text} agregado correctamente.");
 
@@ -116,13 +122,17 @@ namespace Form1
             }
             else
             {
+                //Agregando contacto.
                 contactoempresarialList.Add(vContactoEmpresarial);
                 MessageBox.Show($"El contacto {txtbNombre.Text} agregado correctamente.");
             }
+            //Convirtiendo lista en JSON.
             json = JsonConvert.SerializeObject(contactoempresarialList);
             var sv = new StreamWriter(pathFile, false, Encoding.UTF8);
+            //Guardando JSON.
             sv.Write(json);
             sv.Close();
+            //Actualizar Data Grind View.
             dgvContactosEmpresariales.DataSource = null;
             dgvContactosEmpresariales.DataSource = contactoempresarialList;
         }
@@ -141,12 +151,14 @@ namespace Form1
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\Compañias.json";
             if (File.Exists(pathFile))
             {
+                //Convirtiendo JSON en Lista
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 compañiaList = JsonConvert.DeserializeObject<List<clssCompañia>>(json);
                 for (int i = 0; i < compañiaList.Count; i++)
                 {
                     if (compañiaList[i].Nombre == txtbNombre2.Text)
                     {
+                        //Actualizando compañia.
                         compañiaList.Remove(compañiaList[i]);
                         compañiaList.Add(vCompañia);
                         MessageBox.Show($"La compañia {txtbNombre2.Text} fue encontrado y actualizado.");
@@ -156,6 +168,7 @@ namespace Form1
                 }
                 if (j == 0)
                 {
+                    //Agregando compañia.
                     compañiaList.Add(vCompañia);
                     MessageBox.Show($"La compañia {txtbNombre2.Text} ha sido agregada correctamente.");
 
@@ -163,13 +176,16 @@ namespace Form1
             }
             else
             {
+                //Agregando compañia.
                 compañiaList.Add(vCompañia);
                 MessageBox.Show($"La Compañia {txtbNombre2.Text} ha sido agregada correctamente.");
             }
+            //Convirtiendo lista en JSON y guardando el JSON.
             json = JsonConvert.SerializeObject(compañiaList);
             var sv = new StreamWriter(pathFile, false, Encoding.UTF8);
             sv.Write(json);
             sv.Close();
+            //Actualizando Data Grind View,
             dgvContactosEmpresariales.DataSource = null;
             dgvContactosEmpresariales.DataSource = compañiaList;
         }
@@ -244,12 +260,14 @@ namespace Form1
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\ContactosEmpresariales.json";
             if (File.Exists(pathFile))
             {
+                //Convirtiendo JSON en lista.
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 contactoempresarialList = JsonConvert.DeserializeObject<List<clssContactoEmpresarial>>(json);
                 for (int i = 0; i < contactoempresarialList.Count; i++)
                 {
                     if (contactoempresarialList[i].Nombre.ToString() == txtbNombre.Text)
                     {
+                        //Extrayendo datos de la busqueda.
                         bttnEliminar.Enabled = true;
                         cbCompañia.SelectedItem = contactoempresarialList[i].Compañia.ToString();
                         txtbTelefono.Text = contactoempresarialList[i].Telefono.ToString();
@@ -262,12 +280,12 @@ namespace Form1
                 }
                 if (j == 0)
                 {
-                    MessageBox.Show($"El contacto referenciado como {txtbNombre.Text}, No existe");
+                    MessageBox.Show($"El contacto referenciado como {txtbNombre.Text}, no existe en la lista de contactos.");
                 }
             }
             else
             {
-                MessageBox.Show($"Aún no ha ingresado ningun dato.");
+                MessageBox.Show($"Aún no ha ingresado ningun dato a la lista de contacto.");
             }
         }
 
@@ -287,12 +305,14 @@ namespace Form1
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\ContactosEmpresariales.json";
             if (File.Exists(pathFile))
             {
+                //Convirtiendo Json en lista.
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 contactoempresarialList = JsonConvert.DeserializeObject<List<clssContactoEmpresarial>>(json);
                 for (int i = 0; i < contactoempresarialList.Count; i++)
                 {
                     if (contactoempresarialList[i].Nombre.ToString() == txtbNombre.Text)
                     {
+                        //Eliminando contacto.
                         contactoempresarialList.Remove(contactoempresarialList[i]);
                         MessageBox.Show($"El contacto {txtbNombre.Text} fue eliminado correctamente.");
                         j = 1;
@@ -306,12 +326,14 @@ namespace Form1
             }
             else
             {
-                MessageBox.Show($"Aún no se han ingresado gastos.");
+                MessageBox.Show($"Aún no se han ingresado datos en la lista de contactos.");
             }
+            //Convirtiendo lista en Json.
             json = JsonConvert.SerializeObject(contactoempresarialList);
             var sv = new StreamWriter(pathFile, false, Encoding.UTF8);
             sv.Write(json);
             sv.Close();
+            //Actualizando formulario y Data Grind View.
             dgvContactosEmpresariales.DataSource = null;
             dgvContactosEmpresariales.DataSource = contactoempresarialList;
             bttnEliminar.Enabled = false;
@@ -320,6 +342,7 @@ namespace Form1
 
         private void bttnCargarImagen_Click(object sender, EventArgs e)
         {
+            //Abriendo explorador para 
             try
             {
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -345,11 +368,13 @@ namespace Form1
             BorradoCamposRellenables2();
             gbGestiónCompañia.Visible = false;
             dgvContactosEmpresariales.DataSource = contactoempresarialList;
+            //Actualiza combo box compañia
             var auxList = new List<string> { };
             var json = string.Empty;
             string pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\Compañias.json";
             if (File.Exists(pathFile))
             {
+                //Convertir Json en lista.
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 compañiaList = JsonConvert.DeserializeObject<List<clssCompañia>>(json);
                 for (int i = 0; i < compañiaList.Count; i++)
@@ -368,6 +393,7 @@ namespace Form1
             var pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\Compañias.json";
             if (File.Exists(pathFile))
             {
+                //Convertir Json en lista.
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 compañiaList = JsonConvert.DeserializeObject<List<clssCompañia>>(json);
                 dgvContactosEmpresariales.DataSource = compañiaList;

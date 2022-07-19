@@ -38,6 +38,14 @@
             this.bttnGuardar = new System.Windows.Forms.Button();
             this.bttnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bttnCompañia = new System.Windows.Forms.Button();
+            this.bttnEliminar = new System.Windows.Forms.Button();
+            this.bttnBuscar = new System.Windows.Forms.Button();
+            this.bttnCargarImagen = new System.Windows.Forms.Button();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.lblPosición = new System.Windows.Forms.Label();
+            this.txtbPosición = new System.Windows.Forms.TextBox();
+            this.cbCompañia = new System.Windows.Forms.ComboBox();
             this.gbGestiónCompañia = new System.Windows.Forms.GroupBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.bttnEliminar2 = new System.Windows.Forms.Button();
@@ -51,20 +59,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtbTelefono2 = new System.Windows.Forms.TextBox();
             this.txtbNombre2 = new System.Windows.Forms.TextBox();
-            this.bttnCompañia = new System.Windows.Forms.Button();
-            this.bttnEliminar = new System.Windows.Forms.Button();
-            this.bttnBuscar = new System.Windows.Forms.Button();
-            this.bttnCargarImagen = new System.Windows.Forms.Button();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.lblPosición = new System.Windows.Forms.Label();
-            this.txtbPosición = new System.Windows.Forms.TextBox();
-            this.cbCompañia = new System.Windows.Forms.ComboBox();
             this.dgvContactosEmpresariales = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.gbGestiónCompañia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            this.gbGestiónCompañia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactosEmpresariales)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,6 +185,101 @@
             this.groupBox1.Text = "Registro ";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // bttnCompañia
+            // 
+            this.bttnCompañia.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bttnCompañia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttnCompañia.Location = new System.Drawing.Point(283, 153);
+            this.bttnCompañia.Name = "bttnCompañia";
+            this.bttnCompañia.Size = new System.Drawing.Size(32, 29);
+            this.bttnCompañia.TabIndex = 22;
+            this.bttnCompañia.Text = "...";
+            this.bttnCompañia.UseVisualStyleBackColor = false;
+            this.bttnCompañia.Click += new System.EventHandler(this.bttnCompañia_Click);
+            // 
+            // bttnEliminar
+            // 
+            this.bttnEliminar.BackColor = System.Drawing.Color.IndianRed;
+            this.bttnEliminar.Enabled = false;
+            this.bttnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttnEliminar.Location = new System.Drawing.Point(30, 289);
+            this.bttnEliminar.Name = "bttnEliminar";
+            this.bttnEliminar.Size = new System.Drawing.Size(120, 31);
+            this.bttnEliminar.TabIndex = 21;
+            this.bttnEliminar.Text = "Eliminar";
+            this.bttnEliminar.UseVisualStyleBackColor = false;
+            this.bttnEliminar.Click += new System.EventHandler(this.bttnEliminar_Click);
+            // 
+            // bttnBuscar
+            // 
+            this.bttnBuscar.BackColor = System.Drawing.Color.LightCyan;
+            this.bttnBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttnBuscar.Location = new System.Drawing.Point(446, 61);
+            this.bttnBuscar.Name = "bttnBuscar";
+            this.bttnBuscar.Size = new System.Drawing.Size(62, 29);
+            this.bttnBuscar.TabIndex = 20;
+            this.bttnBuscar.Text = "Buscar";
+            this.bttnBuscar.UseVisualStyleBackColor = false;
+            this.bttnBuscar.Click += new System.EventHandler(this.bttnBuscar_Click);
+            // 
+            // bttnCargarImagen
+            // 
+            this.bttnCargarImagen.BackColor = System.Drawing.Color.LemonChiffon;
+            this.bttnCargarImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bttnCargarImagen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttnCargarImagen.Location = new System.Drawing.Point(321, 289);
+            this.bttnCargarImagen.Name = "bttnCargarImagen";
+            this.bttnCargarImagen.Size = new System.Drawing.Size(187, 29);
+            this.bttnCargarImagen.TabIndex = 16;
+            this.bttnCargarImagen.Text = "Cargar imagen";
+            this.bttnCargarImagen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bttnCargarImagen.UseVisualStyleBackColor = false;
+            this.bttnCargarImagen.Click += new System.EventHandler(this.bttnCargarImagen_Click);
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(321, 96);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(187, 188);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 15;
+            this.pbImagen.TabStop = false;
+            // 
+            // lblPosición
+            // 
+            this.lblPosición.AutoSize = true;
+            this.lblPosición.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPosición.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblPosición.Location = new System.Drawing.Point(30, 208);
+            this.lblPosición.Name = "lblPosición";
+            this.lblPosición.Size = new System.Drawing.Size(85, 23);
+            this.lblPosición.TabIndex = 14;
+            this.lblPosición.Text = "Posición:";
+            // 
+            // txtbPosición
+            // 
+            this.txtbPosición.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtbPosición.Location = new System.Drawing.Point(127, 204);
+            this.txtbPosición.Name = "txtbPosición";
+            this.txtbPosición.Size = new System.Drawing.Size(156, 27);
+            this.txtbPosición.TabIndex = 13;
+            // 
+            // cbCompañia
+            // 
+            this.cbCompañia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbCompañia.FormattingEnabled = true;
+            this.cbCompañia.Items.AddRange(new object[] {
+            "Claro",
+            "Altice ",
+            "Viva ",
+            "Orange ",
+            "T-mobile "});
+            this.cbCompañia.Location = new System.Drawing.Point(121, 153);
+            this.cbCompañia.Name = "cbCompañia";
+            this.cbCompañia.Size = new System.Drawing.Size(156, 28);
+            this.cbCompañia.TabIndex = 8;
+            this.cbCompañia.SelectedIndexChanged += new System.EventHandler(this.cboxCompañia_SelectedIndexChanged);
+            // 
             // gbGestiónCompañia
             // 
             this.gbGestiónCompañia.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -201,7 +296,7 @@
             this.gbGestiónCompañia.Controls.Add(this.txtbTelefono2);
             this.gbGestiónCompañia.Controls.Add(this.txtbNombre2);
             this.gbGestiónCompañia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gbGestiónCompañia.Location = new System.Drawing.Point(422, 65);
+            this.gbGestiónCompañia.Location = new System.Drawing.Point(0, 0);
             this.gbGestiónCompañia.Name = "gbGestiónCompañia";
             this.gbGestiónCompañia.Size = new System.Drawing.Size(524, 346);
             this.gbGestiónCompañia.TabIndex = 23;
@@ -345,101 +440,6 @@
             this.txtbNombre2.Size = new System.Drawing.Size(156, 27);
             this.txtbNombre2.TabIndex = 2;
             // 
-            // bttnCompañia
-            // 
-            this.bttnCompañia.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bttnCompañia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bttnCompañia.Location = new System.Drawing.Point(283, 153);
-            this.bttnCompañia.Name = "bttnCompañia";
-            this.bttnCompañia.Size = new System.Drawing.Size(32, 29);
-            this.bttnCompañia.TabIndex = 22;
-            this.bttnCompañia.Text = "...";
-            this.bttnCompañia.UseVisualStyleBackColor = false;
-            this.bttnCompañia.Click += new System.EventHandler(this.bttnCompañia_Click);
-            // 
-            // bttnEliminar
-            // 
-            this.bttnEliminar.BackColor = System.Drawing.Color.IndianRed;
-            this.bttnEliminar.Enabled = false;
-            this.bttnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bttnEliminar.Location = new System.Drawing.Point(30, 289);
-            this.bttnEliminar.Name = "bttnEliminar";
-            this.bttnEliminar.Size = new System.Drawing.Size(120, 31);
-            this.bttnEliminar.TabIndex = 21;
-            this.bttnEliminar.Text = "Eliminar";
-            this.bttnEliminar.UseVisualStyleBackColor = false;
-            this.bttnEliminar.Click += new System.EventHandler(this.bttnEliminar_Click);
-            // 
-            // bttnBuscar
-            // 
-            this.bttnBuscar.BackColor = System.Drawing.Color.LightCyan;
-            this.bttnBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bttnBuscar.Location = new System.Drawing.Point(446, 61);
-            this.bttnBuscar.Name = "bttnBuscar";
-            this.bttnBuscar.Size = new System.Drawing.Size(62, 29);
-            this.bttnBuscar.TabIndex = 20;
-            this.bttnBuscar.Text = "Buscar";
-            this.bttnBuscar.UseVisualStyleBackColor = false;
-            this.bttnBuscar.Click += new System.EventHandler(this.bttnBuscar_Click);
-            // 
-            // bttnCargarImagen
-            // 
-            this.bttnCargarImagen.BackColor = System.Drawing.Color.LemonChiffon;
-            this.bttnCargarImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bttnCargarImagen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bttnCargarImagen.Location = new System.Drawing.Point(321, 289);
-            this.bttnCargarImagen.Name = "bttnCargarImagen";
-            this.bttnCargarImagen.Size = new System.Drawing.Size(187, 29);
-            this.bttnCargarImagen.TabIndex = 16;
-            this.bttnCargarImagen.Text = "Cargar imagen";
-            this.bttnCargarImagen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bttnCargarImagen.UseVisualStyleBackColor = false;
-            this.bttnCargarImagen.Click += new System.EventHandler(this.bttnCargarImagen_Click);
-            // 
-            // pbImagen
-            // 
-            this.pbImagen.Location = new System.Drawing.Point(321, 96);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(187, 188);
-            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImagen.TabIndex = 15;
-            this.pbImagen.TabStop = false;
-            // 
-            // lblPosición
-            // 
-            this.lblPosición.AutoSize = true;
-            this.lblPosición.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPosición.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblPosición.Location = new System.Drawing.Point(30, 208);
-            this.lblPosición.Name = "lblPosición";
-            this.lblPosición.Size = new System.Drawing.Size(85, 23);
-            this.lblPosición.TabIndex = 14;
-            this.lblPosición.Text = "Posición:";
-            // 
-            // txtbPosición
-            // 
-            this.txtbPosición.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtbPosición.Location = new System.Drawing.Point(127, 204);
-            this.txtbPosición.Name = "txtbPosición";
-            this.txtbPosición.Size = new System.Drawing.Size(156, 27);
-            this.txtbPosición.TabIndex = 13;
-            // 
-            // cbCompañia
-            // 
-            this.cbCompañia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbCompañia.FormattingEnabled = true;
-            this.cbCompañia.Items.AddRange(new object[] {
-            "Claro",
-            "Altice ",
-            "Viva ",
-            "Orange ",
-            "T-mobile "});
-            this.cbCompañia.Location = new System.Drawing.Point(121, 153);
-            this.cbCompañia.Name = "cbCompañia";
-            this.cbCompañia.Size = new System.Drawing.Size(156, 28);
-            this.cbCompañia.TabIndex = 8;
-            this.cbCompañia.SelectedIndexChanged += new System.EventHandler(this.cboxCompañia_SelectedIndexChanged);
-            // 
             // dgvContactosEmpresariales
             // 
             this.dgvContactosEmpresariales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -472,9 +472,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.gbGestiónCompañia.ResumeLayout(false);
             this.gbGestiónCompañia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactosEmpresariales)).EndInit();
             this.ResumeLayout(false);
 
